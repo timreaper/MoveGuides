@@ -1,0 +1,67 @@
+.sidebar {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: $map-height;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+  &__header {
+    p {
+      font-family: $header-font;
+      font-size: 1.5em;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+.employee {
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  &:hover {
+    opacity: 0.5;
+    @include transition(opacity .5s);
+  }
+  hr {
+    background-color: black;
+    height: 1px;
+    margin: 10px 5px 0;
+    opacity: 0.1;
+    width: 95%;
+  }
+  &__image {
+    height: 100%;
+    max-width: 100%;
+  }
+  &__info {
+    padding: 0;
+    &__arrival {
+      font-family: $main-font;
+      font-size: 0.75em;
+      margin: 0;
+    }
+    &__name {
+      font-family: $main-font;
+      font-weight: bold;
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+  &__warning {
+    &--icon {
+      left: 20px;
+      position: absolute;
+    }
+    &--text {
+      color: red;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.75em;
+      margin: 0;
+    }
+  }
+}
+
+.employees-container {
+  background-image: url('../../assets/patterns/lines-15x15.png');
+  background-repeat: repeat;
+}

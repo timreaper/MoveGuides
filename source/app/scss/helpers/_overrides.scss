@@ -1,0 +1,16 @@
+// Overriding default button styling in Foundation
+.button {
+  background-color: $button-color;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button:focus, .button:hover {
+  background-color: $button-hover-color;
+}
+
+// Overriding default width for rows in Foundation & adding padding to sides
+.row {
+  padding: 0 0.5rem;
+  max-width: 100%;
+}

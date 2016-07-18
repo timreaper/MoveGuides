@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  &__filters {
+    background-image: url('../../assets/patterns/lines-15x15.png');
+    background-repeat: repeat;
+    padding: 20px 0;
+    &__filter {
+      border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+      color: black;
+      cursor: pointer;
+      font-weight: bold;
+      list-style: outside none none;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%;
+      &.selected {
+        border-bottom: 3px solid $header-block-color;
+      }
+    }
+  }
+  &__text {
+    background-color: $header-block-color;
+    color: white;
+    font-family: $header-font;
+    font-size: 4em;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}

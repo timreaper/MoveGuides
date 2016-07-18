@@ -1,0 +1,103 @@
+<div class="top-bar">
+    <div class="top-bar-left">
+        <a href="/">
+            <img src="assets/logos/moveguides.png" alt="Move Guides" title="Move Guides">
+        </a>
+    </div>
+    <div class="top-bar-right text-right">
+        <div class="row align-right">
+            <div class="columns">
+                <p class="no-margin">Amanda Johnson</p>
+                <a>Log out</a>
+            </div>
+            <div>
+                <img class="img-circle" src="assets/employees/002-gemma-falconn.jpg">
+                <img src="assets/icons/notifications.png" alt="Notifications" title="Notifications">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row no-padding">
+    <div class="header">
+        <div class="header__text">
+            Track Your Employees
+        </div>
+        <div class="header__filters">
+            <div class="row align-center">
+                <div class="column small-3">
+                </div>
+                <div class="column small-6">
+                    <ul class="row">
+                        <li class="column small-4 header__filters__filter selected">
+                            Map
+                        </li>
+                        <li class="column small-4 header__filters__filter">
+                            List
+                        </li>
+                        <li class="column small-4 header__filters__filter">
+                            Filters
+                        </li>
+                    </ul>
+                </div>
+                <div class="column small-3 text-right">
+                    <button class="button">
+                        Add Filter
+                        <img src="assets/icons/add-filter.png" class="" id="">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="filters">
+        <button class="button filters__filter__name">Short <span aria-hidden="true"><i class="fa fa-close"></i></span>
+        </button>
+        <button class="button filters__filter__name">Long Name Or Filter <span aria-hidden="true"><i
+                class="fa fa-close"></i></span></button>
+        <button class="button filters__filter__name">Filter Name <span aria-hidden="true"><i
+                class="fa fa-close"></i></span></button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="small-9 columns map" id="mapcontainer">
+
+    </div>
+    <div class="columns sidebar">
+        <div class="sidebar__header">
+            <p>Employees in</p>
+            <p class="uppercase">London</p>
+        </div>
+        <div class="employees-container">
+            {{#each employees}}
+                <div class="row employee" id="{{id}}" title="{{first_name}} {{last_name}}">
+                    {{#if visa.status}}
+                        <img class="employee__warning--icon" src="assets/icons/warning.png" alt="Visa Warning"
+                             title="Visa expires in {{visa.time_remaining}} days">
+                    {{/if}}
+                    <img src="{{photo}}" class="shrink columns employee__image" alt="{{first_name}} {{last_name}}"
+                         title="{{first_name}} {{last_name}}">
+                    <div class="columns employee__info">
+                        <p class="employee__info__name">{{first_name}} {{last_name}}</p>
+                        <p class="employee__info__arrival">Arrival date: {{arrival_date}}</p>
+                        {{#if visa.status}}
+                            <p class="employee__warning--text">Visa expires in {{visa.time_remaining}} days</p>
+                        {{/if}}
+                    </div>
+                    <hr>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

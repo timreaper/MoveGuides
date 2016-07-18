@@ -1,0 +1,112 @@
+{
+  "employees": {
+    "0": {
+      "id": "employee001",
+      "last_name": "Rickmann",
+      "first_name": "Thomas",
+      "arrival_date": "12 Jan 2014",
+      "location": {
+        "city": "London",
+        "latitude": 51.514383,
+        "longitude": -0.105057
+      },
+      "visa": {
+        "status": 0,
+        "time_remaining": "0"
+      },
+      "photo": "assets/employees/001-thomas-rickmann.jpg"
+    },
+    "1": {
+      "id": "employee002",
+      "last_name": "Falconn",
+      "first_name": "Gemma",
+      "arrival_date": "28 Dec 2013",
+      "location": {
+        "city": "Budapest",
+        "latitude": 47.502916,
+        "longitude": 19.063339
+      },
+      "visa": {
+        "status": 0,
+        "time_remaining": "0"
+      },
+      "photo": "assets/employees/002-gemma-falconn.jpg"
+    },
+    "2": {
+      "id": "employee003",
+      "last_name": "Kensworthy",
+      "first_name": "Daniel",
+      "arrival_date": "13 Feb 2014",
+      "location": {
+        "city": "Madrid",
+        "latitude": 40.448619,
+        "longitude": -3.681107
+      },
+      "visa": {
+        "status": 0,
+        "time_remaining": "0"
+      },
+      "photo": "assets/employees/003-daniel-kensworthy.jpg"
+    },
+    "3": {
+      "id": "employee004",
+      "last_name": "Vila Falcon",
+      "first_name": "Andre",
+      "arrival_date": "17 Feb 2014",
+      "location": {
+        "city": "Zurich",
+        "latitude": 47.381242,
+        "longitude": 8.519211
+      },
+      "visa": {
+        "status": 0,
+        "time_remaining": "0"
+      },
+      "photo": "assets/employees/004-andre-vila-falcon.jpg"
+    },
+    "4": {
+      "id": "employee005",
+      "last_name": "Smith",
+      "first_name": "George",
+      "arrival_date": "23 Sep 2013",
+      "visa": {
+        "status": 0,
+        "time_remaining": "0"
+      },
+      "photo": "assets/employees/005-george-smith.jpg"
+    },
+    "5": {
+      "id": "employee006",
+      "last_name": "Hightower",
+      "first_name": "Amanda",
+      "arrival_date": "27 Jul 2013",
+      "visa": {
+        "status": 0,
+        "time_remaining": "0"
+      },
+      "photo": "assets/employees/006-amanda-hightower.jpg"
+    },
+    "6": {
+      "id": "employee007",
+      "last_name": "Bloomberg",
+      "first_name": "Diana",
+      "arrival_date": "10 Aug 2013",
+      "visa": {
+        "status": 1,
+        "time_remaining": "90"
+      },
+      "photo": "assets/employees/007-diana-bloomberg.jpg"
+    },
+    "7": {
+      "id": "employee008",
+      "last_name": "Heisenberg",
+      "first_name": "Magnus",
+      "arrival_date": "03 Mar 2014",
+      "visa": {
+        "status": 0,
+        "time_remaining": "0"
+      },
+      "photo": "assets/employees/008-magnus-heisenberg.jpg"
+    }
+  }
+}
